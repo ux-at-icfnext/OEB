@@ -1,7 +1,8 @@
 const yaml = require("js-yaml");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
+  eleventyConfig.addPassthroughCopy({"src/scripts": "scripts"});
+  eleventyConfig.addPassthroughCopy({"src/styles": "styles"});
 
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 

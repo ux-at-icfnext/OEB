@@ -1,8 +1,5 @@
 
 <div class="ontario-table-container table-large">
-    <div class="ontario-table-scroll--wrapper">
-        <div class="ontario-table-scroll--div"></div>
-    </div>
     <div class="ontario-table-div">
         <table tabindex="0" style="width: 100%;">
             <caption>Effective March 1, 2024<br>
@@ -78,9 +75,6 @@
 
 
 <div class="ontario-table-container table-small" >
-    <div class="ontario-table-scroll--wrapper">
-        <div class="ontario-table-scroll--div"></div>
-    </div>
     <div class="ontario-table-div">
         <table tabindex="0" style="width: 100%;">
             <caption>Effective March 1, 2024<br>

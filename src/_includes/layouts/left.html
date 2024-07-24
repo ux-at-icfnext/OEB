@@ -1,0 +1,65 @@
+---
+layout: layouts/base
+---
+<!-- grid columns isn't working, so using flexbox work around-->
+<style>
+  @media (min-width: 641px) {
+    .row {
+      display: flex;
+      gap: 20px;
+    }
+  }
+</style>
+
+<div class="row">
+  <!-- this should use ODS grid class="small-12 large-4 column" -->
+<div class="nav">
+  <nav>
+    <div class="ontario-row">
+        <div class="ontario-columns ontario-small-12">
+            <div class="ontario-page-navigation">
+                <div class="ontario-page-navigation-content">
+                    <h2 class="ontario-page-navigation-header">On this page</h2>
+                    <a class="ontario-show-on-focus" href="#skip-to-main">
+                        Skip this page navigation
+                    </a>
+                    <ol class="ontario-page-navigation-list" role="navigation">
+                        <li class="ontario-page-navigation-list__item">
+                            <a class="ontario-page-navigation-item__link" href=#>
+                              About The Ontario Electricity Support Program
+                            </a>
+                        </li>
+                        <li class="ontario-page-navigation-list__item">
+                            <a class="ontario-page-navigation-item__link" href=#>
+                              OESP Amounts And Eligibility
+                            </a>
+                        </li>
+                        <li class="ontario-page-navigation-list__item">
+                            <a class="ontario-page-navigation-item__link" href=#>
+                              Applications
+                            </a>
+                        </li>
+                        <li class="ontario-page-navigation-list__item">
+                            <a class="ontario-page-navigation-item__link" href=#>
+                              Program Funding
+                            </a>
+                        </li>
+                        <li class="ontario-page-navigation-list__item">
+                            <a class="ontario-page-navigation-item__link" href=#>
+                              Other Energy Assistance Programs
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+</div><!--closes nav-->
+
+<!-- this should use ODS grid class="small-12 large-8 column" -->
+<div id="skip-to-main" class="content">{{ content }}</div>
+
+</div><!-- closes row-->

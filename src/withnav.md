@@ -1,5 +1,5 @@
 ---
-layout: layouts/base
+layout: layouts/left
 
 accordion:
     list:

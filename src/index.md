@@ -13,4 +13,4 @@ Responsive table (CSS ONLY)](https://codepen.io/ind88/pen/egNzOP) to function. D
 
 ## Prototype Examples
 [FAQ Page](/faqs/)
-[FAQ with in page Navigation](/withnav/)
+[FAQ with in page navigation](/withnav/)

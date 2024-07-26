@@ -1,5 +1,5 @@
 ---
-layout: layouts/base
+layout: layouts/grid-container
 ---
 
 
@@ -12,5 +12,6 @@ ODS only has tables that use a slider to view. These tables have shown to be dif
 Responsive table (CSS ONLY)](https://codepen.io/ind88/pen/egNzOP) to function. Doing so aligns witht the custom component priniciples.
 
 ## Prototype Examples
+[Home](/landing)
 [FAQ Page](/faqs/)
 [FAQ with in page navigation](/withnav/)

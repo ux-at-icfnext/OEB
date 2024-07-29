@@ -4,6 +4,8 @@ layout: layouts/base
 <style>
 .hero { background-color: #1080A6;}
 
+.ontario-dropdown{background-color:#fff;background-image:url("/assets/imgs/ontario-material-dropdown-arrow-48px.svg");background-position:right .5rem center;background-repeat:no-repeat;background-size:2rem;padding-right:2.25rem;cursor:pointer}.ontario-dropdown::-ms-expand{display:none}.ontario-dropdown option{font-weight:normal}
+
 .message {
   background-image: url("/assets/imgs/hero.png");
   background-size: cover;
@@ -46,7 +48,10 @@ layout: layouts/base
     background-color: #F8E5C3;
     padding: 50px;
   }
-  .section3 {
+  .section2-content .col1 {
+    max-width: 50%;
+  }
+  .section3, .section2-content {
     display: flex;
     gap: 50px;
     padding: 50px;
@@ -64,7 +69,7 @@ layout: layouts/base
 
 Welcome to the Ontario Electricity Support Program (OESP). If you are a customer of an electricity utility and in a lower-income home, you may qualify for a reduction on your electricity bill. The OESP can reduce the cost of your household electricity depending on how many people live in your home and your combined household income.
 
-<button class="ontario-button ontario-button--secondary">New Application</button><button class="ontario-button ontario-button--secondary">Renew Application</button>
+<a href="/newapp" class="ontario-button ontario-button--secondary">New Application</a><a href="/renewapp" class="ontario-button ontario-button--secondary">Renew Application</a>
 </div>
 </div>
 <div class="section1 container">
@@ -76,7 +81,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
         </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
-                <a href="#">
+                <a href="/faqs">
                     Frequently Asked Questions
                 </a>
             </h2>
@@ -88,7 +93,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
         </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
-                <a href="#">
+                <a href="/forms">
                     Documents
                 </a>
             </h2>
@@ -100,7 +105,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
         </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
-                <a href="#">
+                <a href="/eligible">
                     Are you Eligible?
                 </a>
             </h2>
@@ -111,6 +116,20 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
 
 <div class="section2">
   <div class="section2-content container">
+  <div class="col1" markdown="1"> 
+    <h3>More help for more Ontarians</h3>
+    Effective March 1, 2024, the Ontario government has changed the household income amounts needed to qualify for OESP. This change makes more households eligible for electricity bill relief. 
+
+    Existing OESP recipients may be eligible for higher credit amounts. Please reapply to get the higher credit if you are eligible. Please contact the OESP Contact Centre at [1-855-831-8151](#) or [help@ontarioelectricitysupport.ca](#) to find out if you are eligible for a higher credit and how to reapply.
+
+    <h3>Beware of energy scams:</h3>
+
+    There are a growing number of scams aimed at energy consumers. The OEB and OESP are not affiliated with any private energy services companies. We do not deliver heating, cooling or any other home energy services. 
+
+    **No** home energy assessment, audit, inspection or home visit is required to apply for the OESP.
+
+  </div>
+  <div class="col2">
     <h2>Check the status of your application</h2>
     <p>Your User ID and a temporary password were emailed to you when you saved or submitted your application.</p>
     <div class="ontario-form-group">
@@ -127,6 +146,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
     </div>
     <button class="ontario-button ontario-button--secondary">Login</button>
     <p><a href="#">Forgot User ID?</a><br /> <a href="#">Forgot Password?</a></p>
+  </div>
   </div>
 </div>
 

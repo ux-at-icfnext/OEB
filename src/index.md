@@ -11,7 +11,17 @@ _note on tables:_
 ODS only has tables that use a slider to view. These tables have shown to be difficult for mobile users. The design makes use of truely responsive tables that stack in the mobile view. Both sized tables are in complete compliance with the table component but will need to use something like [CodePen Home
 Responsive table (CSS ONLY)](https://codepen.io/ind88/pen/egNzOP) to function. Doing so aligns witht the custom component priniciples.
 
+_note images on home page_ 
+The images need to be refactored to fit the components -- especially for responsiveness
+
 ## Prototype Examples
+_note most page links are functional so you can click through the prototype_
 [Home](/landing)
 [FAQ Page](/faqs/)
-[FAQ with in page navigation](/withnav/)
+[FAQ with in page navigation](/withnav/) (not included with clicking through the prototype)
+
+### To show basic pages & forms
+[Program Documents](/forms)
+[Are you Eligible](/eligible)
+[New App](/newapp)
+[Renew App](/renewapp)

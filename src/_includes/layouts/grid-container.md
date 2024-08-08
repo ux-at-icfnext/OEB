@@ -6,7 +6,7 @@ layout: layouts/base
         article { max-width: 95%; margin: auto; }
     }
     @media (min-width: 641px) {
-        article { max-width: 1168px; margin: auto; }
+        article { max-width: 1120px; margin: auto; }
     }
 </style>
 

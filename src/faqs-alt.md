@@ -1,5 +1,5 @@
 ---
-layout: layouts/left
+layout: layouts/grid-container
 
 accordion:
     list:
@@ -160,4 +160,5 @@ other:
             Consumers concerned about any suspicious communications can also contact the Canadian Anti-Fraud Centre or call [1-888-495-8501](callto:1-888-495-8501).
 
 ---
+
 {% include "partials/faq.md" %}

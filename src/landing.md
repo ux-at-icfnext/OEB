@@ -23,14 +23,14 @@ layout: layouts/base
   }
 }
 @media (min-width: 641px) {
-  .message {max-width: 1168px; margin: auto;}
+  .message {max-width: 1120px; margin: auto;}
   .message h1 {
     font-size: 33px;
-    max-width: 65%;
+    max-width: 60%;
   }
   .message p {
     font-size: 1.25rem;
-    max-width: 60%;
+    max-width: 45%;
   }
   .information {
     max-width: 50%;
@@ -72,6 +72,21 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
 <a href="/newapp" class="ontario-button ontario-button--secondary">New Application</a><a href="/renewapp" class="ontario-button ontario-button--secondary">Renew Application</a>
 </div>
 </div>
+
+
+<div class="ontario-alert ontario-alert--informational container">
+    <div class="ontario-alert__header">
+        <div class="ontario-alert__header-icon">
+            <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                <use href="#ontario-icon-alert-information"></use></svg>
+        </div>
+        <h2 class="ontario-alert__header-title ontario-h4">Example page alert</h2>
+    </div>
+    <div class="ontario-alert__body">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+    </div>
+</div>
+
 <div class="section1 container">
   <h2>Learn more about the program</h2>
 <ul class="ontario-card__container ontario-card--cards-per-row-3">

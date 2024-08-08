@@ -14,7 +14,7 @@
 ## Questions and Answers
 <main id="about"></main>
 
-### About The Ontario Electricity Support Program
+### About the Program
 {% include "patterns/accordion.md" %}
 
 <div class="top">
@@ -26,7 +26,7 @@
 
 <main id="amounts"></main>
 
-### OESP Amounts And Eligibility
+### Amounts And Eligibility
 {% assign accordion = amounts %}
 {% include "partials/amounts.md" %}
 

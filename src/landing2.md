@@ -130,17 +130,21 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
 <div class="section2">
   <div class="section2-content container">
   <div class="col1" markdown="1"> 
-    <h3>More help for more Ontarians</h3>
-    Effective March 1, 2024, the Ontario government has changed the household income amounts needed to qualify for OESP. This change makes more households eligible for electricity bill relief. 
-
-    Existing OESP recipients may be eligible for higher credit amounts. Please reapply to get the higher credit if you are eligible. Please contact the OESP Contact Centre at [1-855-831-8151](#) or [help@ontarioelectricitysupport.ca](#) to find out if you are eligible for a higher credit and how to reapply.
-
-    <h3>Beware of energy scams:</h3>
-
-    There are a growing number of scams aimed at energy consumers. The OEB and OESP are not affiliated with any private energy services companies. We do not deliver heating, cooling or any other home energy services. 
-
-    **No** home energy assessment, audit, inspection or home visit is required to apply for the OESP.
-
+    <h2>Need help applying?</h2>
+    <p>You can contact an intake agency for assistance. Find one close to you.</p>
+  <div class="ontario-form-group">
+      <label class="ontario-label" for="dropdown-list-example">
+          Select a Region
+      </label>
+      <select class="ontario-input ontario-dropdown" id="dropdown-list-example" name="dropdown-list-example">
+          <option selected value="ON">Select</option>
+          <option value="option-1">Option 1</option>
+          <option value="option-2">Option 2</option>
+      </select>
+    </div>
+    <p>OR</p>
+    <div style="display: flex;"><img src="/assets/imgs/google-maps.png" alt="Agency Locations in Google Maps" style="margin: 5px; height: 45px; width: auto;" ><p>Click on <a href="#">Google Maps {% include "patterns/icon-new-window.md" %}</a> link to visit Google and search using your postal code to find an intake agency in your area.</p></div>
+    <p><b>There is support available to assist Indigenous communities with their applications. Indigenous households can obtain help by phone <a href="tel:18558318151">1-855-831-8151</a> or email <a href="oesp@onwaa.ca">oesp@onwaa.ca</a></b></p>
   </div>
   <div class="col2">
     <h2>Check the status of your application</h2>
@@ -163,25 +167,4 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
   </div>
 </div>
 
-
-<div class="section3 container">
-  <div class="col1">
-    <h3>Need help applying?</h3>
-    <p>You can contact an intake agency for assistance. Find one close to you.</p>
-  </div>
-  <div class="col2">
-    <div class="ontario-form-group">
-      <label class="ontario-label" for="dropdown-list-example">
-          Select a Region
-      </label>
-      <select class="ontario-input ontario-dropdown" id="dropdown-list-example" name="dropdown-list-example">
-          <option selected value="ON">Select</option>
-          <option value="option-1">Option 1</option>
-          <option value="option-2">Option 2</option>
-      </select>
-    </div>
-    <p>OR</p>
-    <div style="display: flex;"><img src="/assets/imgs/google-maps.png" alt="Agency Locations in Google Maps" style="margin: 5px; height: 45px; width: auto;" ><p>Click on <a href="#">Google Maps {% include "patterns/icon-new-window.md" %}</a> link to visit Google and search using your postal code to find an intake agency in your area.</p></div>
-    <p><b>There is support available to assist Indigenous communities with their applications. Indigenous households can obtain help by phone <a href="tel:18558318151">1-855-831-8151</a> or email <a href="oesp@onwaa.ca">oesp@onwaa.ca</a></b></p>
-</div>
 

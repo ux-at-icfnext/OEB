@@ -5,7 +5,7 @@
             <div class='ontario-columns ontario-small-12 ontario-medium-6'>
                 <h3 class='ontario-h4'>Contact Us</h3>
                 <p>Hours of Operation: Monday through Friday, 8:30am to 5:30pm ET</p>
-                <h4 class='ontario-h5'>Mailing Address</h4>
+                <h4 class='ontario-h5'>Mailing Address <img src="/assets/imgs/contact_mail.png" style="height: 2rem; width: auto;" /></h4>
                 <p>Ontario Electricity Support Program (OESP)<br/>PO Box 1540 STN B<br />Ottawa, ON, K1P 0C7</p>
             </div>
             <div class='ontario-columns ontario-small-12 ontario-medium-6'>

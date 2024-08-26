@@ -10,7 +10,7 @@ layout: layouts/base
   background-image: url("/assets/imgs/hero.png");
   background-size: cover;
   padding: 2rem;
-  color: #fff;
+  color: #000;
 }
 @media (max-width: 640px) {
   .message h1 {
@@ -21,6 +21,7 @@ layout: layouts/base
     font-size: 1.25rem;
     max-width: 95%;
   }
+  .ontario-card__image-container { max-width: 20%;}
 }
 @media (min-width: 641px) {
   .message {max-width: 1120px; margin: auto;}
@@ -38,6 +39,7 @@ layout: layouts/base
   .status {
     max-width: 50%;
   }
+  
   .section1 {
     padding: 50px;
   }
@@ -58,12 +60,13 @@ layout: layouts/base
 }
 
 .ontario-card__image-container { background-color: #F8E5C3; }
+.ontario-card__image { object-fit: contain;}
 </style>
 
 <div class="hero" markdown="1">
 <div class="message" markdown="1">
 
-# There’s help for lower-income households. Get help. Start now.
+# Check it out! You might qualify.
 
 Welcome to the Ontario Electricity Support Program (OESP). If you are a customer of an electricity utility and in a lower-income home, you may qualify for a reduction on your electricity bill. The OESP can reduce the cost of your household electricity depending on how many people live in your home and your combined household income.
 
@@ -90,7 +93,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
 <ul class="ontario-card__container ontario-card--cards-per-row-3">
     <li class="ontario-card ontario-card--image--one-third   ontario-card--position-horizontal ontario-card--position-horizontal__image-left">
         <div class="ontario-card__image-container">
-            <img class="ontario-card__image" src="/assets/imgs/faq.png" alt="card component image">
+            <img class="ontario-card__image" src="/assets/imgs/ontario-icon-help.png" alt="card component image">
         </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -102,7 +105,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
     </li>
     <li class="ontario-card ontario-card--image--one-third   ontario-card--position-horizontal ontario-card--position-horizontal__image-left">
         <div class="ontario-card__image-container">
-            <img class="ontario-card__image" src="/assets/imgs/paper-app.png" alt="card component image">
+            <img class="ontario-card__image" src="/assets/imgs/file_copy.png" alt="card component image">
         </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -114,7 +117,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
     </li>
     <li class="ontario-card ontario-card--image--one-third   ontario-card--position-horizontal ontario-card--position-horizontal__image-left">
         <div class="ontario-card__image-container">
-            <img class="ontario-card__image" src="/assets/imgs/eligible.png" alt="card component image">
+            <img class="ontario-card__image" src="/assets/imgs/how_to_reg.png" alt="card component image">
         </div>
         <div class="ontario-card__text-container ontario-card--image-true">
             <h2 class="ontario-card__heading">
@@ -157,7 +160,7 @@ Welcome to the Ontario Electricity Support Program (OESP). If you are a customer
         </label>
         <input class="ontario-input" type="text" id="text-input-example">
     </div>
-    <button class="ontario-button ontario-button--secondary">Login</button>
+    <button class="ontario-button ontario-button--primary">Login</button>
     <p><a href="#">Forgot User ID?</a><br /> <a href="#">Forgot Password?</a></p>
   </div>
   </div>

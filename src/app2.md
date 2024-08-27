@@ -66,4 +66,75 @@ layout: layouts/grid-container
     </fieldset>
 </div>
 
+<div class="ontario-form-group">
+    <fieldset class="ontario-fieldset">
+        <legend class="ontario-fieldset__legend">
+            Is any family member living in your house a member of one of the following communities?
+        </legend>
+        <div class="ontario-checkboxes">
+            <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="checkbox-option-1" name="options" type="checkbox" value="option-1">
+                <label class="ontario-checkboxes__label" for="checkbox-option-1">
+                    First Nations
+                </label>
+            </div>
+            <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="checkbox-option-2" name="options" type="checkbox" value="option-2">
+                <label class="ontario-checkboxes__label" for="checkbox-option-2">
+                    Inuit
+                </label>
+            </div>
+            <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="checkbox-option-3" name="options" type="checkbox" value="option-3">
+                <label class="ontario-checkboxes__label" for="checkbox-option-3">
+                    Métis
+                </label>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+<div class="ontario-form-group">
+    <fieldset class="ontario-fieldset">
+        <legend class="ontario-fieldset__legend">
+            Do you or another utility account holder receive a CPP Permanent Disability pension?
+        </legend>
+        <div class="ontario-checkboxes">
+            <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="checkbox-option-1" name="options" type="checkbox" value="option-1">
+                <label class="ontario-checkboxes__label" for="checkbox-option-1">
+                    Yes
+                </label>
+            </div>
+            <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="checkbox-option-2" name="options" type="checkbox" value="option-2">
+                <label class="ontario-checkboxes__label" for="checkbox-option-2">
+                    No
+                </label>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+<div class="ontario-form-group">
+    <fieldset class="ontario-fieldset">
+        <div class="ontario-checkboxes">
+            <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="checkbox-option-1" name="options" type="checkbox" value="option-1">
+                <label class="ontario-checkboxes__label" for="checkbox-option-1">
+                    I verify the above information is true.
+                </label>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+<div class="button-group">
+<a href="" class="ontario-button ontario-button--secondary">Previous</a>
+<a href="/app3" class="ontario-button ontario-button--primary">Next</a>
+<a href="" class="ontario-button ontario-button--tertiary">Save Draft</a>
+</div>
+
+
 </div> <!-- form close -->

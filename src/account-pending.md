@@ -5,15 +5,17 @@ auth: true
 
 card:
   - title: Application
-    image: icon-application.png
+    image: description.png
+  - title: Electronic Consent Form
+    image: list_alt.png
   - title: Change Password
-    image: icon-settings.png
+    image: edit_document.png
   - title: Program Documents
-    image: icon-form.png
+    image: file_copy.png
   - title: FAQs
-    image: icon-question.png
+    image: ontario-icon-help.png
   - title: Contact Us
-    image: icon-contact.png
+    image: ontario-icon-tty.png
 ---
 <style>
   img {

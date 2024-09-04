@@ -25,7 +25,7 @@ _*All fields are mandatory_.
     <input class="ontario-input" type="number" id="text-input-example" value="5500">
 </div>
 
-<button class="ontario-button ontario-button--secondary">
+<button class="ontario-button ontario-button--primary">
     Update Results
 </button>
 

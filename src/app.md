@@ -226,9 +226,11 @@ _Please enter your current address and valid postal code. Note that mailing addr
         </div>
     </fieldset>
 </div>
+</div><!-- close gray box -->
 
+<div style="padding: 30px; margin-top: 20px; " markdown="1">
 <div class="button-group">
-<a href="" class="ontario-button ontario-button--secondary">Previous</a>
+<a href="/newapp" class="ontario-button ontario-button--secondary">Previous</a>
 <a href="/app2" class="ontario-button ontario-button--primary">Next</a>
 <a href="" class="ontario-button ontario-button--tertiary">Save Draft</a>
 </div>

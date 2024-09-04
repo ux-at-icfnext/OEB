@@ -130,8 +130,11 @@ layout: layouts/grid-container
     </fieldset>
 </div>
 
+</div><!-- close gray box -->
+
+<div style="padding: 30px; margin-top: 20px; " markdown="1">
 <div class="button-group">
-<a href="" class="ontario-button ontario-button--secondary">Previous</a>
+<a href="/app" class="ontario-button ontario-button--secondary">Previous</a>
 <a href="/app3" class="ontario-button ontario-button--primary">Next</a>
 <a href="" class="ontario-button ontario-button--tertiary">Save Draft</a>
 </div>

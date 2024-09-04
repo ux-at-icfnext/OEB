@@ -6,7 +6,7 @@
 </div>
 <div class="ontario-card__text-container ontario-card--image-true">
 <h2 class="ontario-card__heading">
-<a href="#">
+<a href="{{c.link}}">
 {{ c.title }}
 </a>
 </h2>

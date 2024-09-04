@@ -11,6 +11,7 @@ This prototype uses the [Ontario Design System](https://designsystem.ontario.ca/
 ## Prototype Examples
 _note most page links are functional so you can click through the prototype_
 [Home](/landing)
+[Home with alerts shown](/landing-alerts)
 [FAQ Page](/faqs-alt/) (not included with clicking through the prototype)
 [FAQ with in page navigation](/faqs/) 
 
@@ -19,3 +20,8 @@ _note most page links are functional so you can click through the prototype_
 [Are you Eligible](/eligible)
 [New App](/newapp)
 [Renew App](/renewapp)
+
+### Authenticated Experience
+[Dashboard - application not submitted](/account)
+[Dashboard - application pending](/account-pending)
+[Application](/app)

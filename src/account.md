@@ -6,6 +6,7 @@ auth: true
 card:
   - title: Application
     image: description.png
+    link: /app
   - title: Change Password
     image: edit_document.png
   - title: Program Documents

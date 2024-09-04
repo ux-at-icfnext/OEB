@@ -1,3 +1,8 @@
+<style>
+.ontario-application-subheader, #ontario-header-menu-toggler  { background-color: #00682C; }
+.ontario-header-button:hover { background-color: #00682C; }
+</style>
+
 <div class='documentation-only--application'>
     <div class='ontario-header__container'>
         <header class='ontario-application-header ontario-header' id='ontario-header'>

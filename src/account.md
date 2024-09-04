@@ -13,8 +13,7 @@ card:
     image: file_copy.png
   - title: FAQs
     image: ontario-icon-help.png
-  - title: Contact Us
-    image: ontario-icon-tty.png
+
 ---
 <style>
   img {

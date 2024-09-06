@@ -42,6 +42,7 @@ h4 {
    display: block;
 }
 </style>
+<div class="container">
 
 # Do you have your electricity bill with you?
 
@@ -73,6 +74,7 @@ For more information on the OESP security and privacy policies go to [Program Do
     </div>
 </div>
 
+</div>
 <div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">
 
 ### Primary Utitlity Account Holder

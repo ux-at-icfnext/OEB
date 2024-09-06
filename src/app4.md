@@ -34,8 +34,9 @@ h4 {
    display: block;
 }
 </style>
+<div class="container">
 
-# 3 - Review & Submit
+# 4 - Review & Submit
 <div class="ontario-step-indicator">
     <div class="ontario-row">
         <div class="ontario-columns ontario-small-12">
@@ -86,4 +87,5 @@ If you are having trouble completing your application, feel free to [email us](#
 <div class="button-group">
 <a href="/app3" class="ontario-button ontario-button--secondary">Previous</a>
 <a href="" class="ontario-button ontario-button--primary">Submit Application</a>
+</div>
 </div>

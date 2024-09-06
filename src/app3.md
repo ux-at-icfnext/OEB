@@ -1,14 +1,55 @@
 ---
 layout: layouts/grid-container
+
+table:
+    - fname: Jane
+      lname: Smith
+      date: 01/01/1981
+      soc: "***-***-258"
+      account: Yes
+    - fname: John
+      lname: Smith
+      date: 01/01/1980
+      soc: "***-***-123"
+      account: Yes
+    - fname: Jack
+      lname: Smith
+      date: 01/01/2008
+      soc: "***-***-987"
+      account: No
+    - fname: Janey
+      lname: Smith
+      date: 01/01/2010
+      soc: "***-***-758"
+      account: No
 ---
 <style>
 img {
   cover-fit: contain;
   max-width: 90%;
 }
-.content {
-  display: flex;
-  gap: 30px;
+@media (max-width: 799px) {
+    .small-table {
+        display: block;
+    }
+    .large-table {
+        display: none;
+    }
+}
+@media (min-width: 800px) {
+    .content {
+        display: flex;
+        gap: 30px;
+    }
+    .content .ontario-form-group {
+        width: 45%;
+    }
+    .small-table {
+        display: none;
+    }
+    .large-table {
+        display: block;
+    }
 }
 .two-thirds > div:first-child {
   width: 66%;
@@ -35,6 +76,8 @@ h4 {
 }
 </style>
 
+<div class="container">
+
 # 3 - People in Your House
 <div class="ontario-step-indicator">
     <div class="ontario-row">
@@ -49,7 +92,7 @@ h4 {
         </div>
     </div>
 </div>
-
+</div>
 <div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">
 
 ## Important
@@ -80,21 +123,26 @@ This information is used to verify your income with the Canada Revenue Agency.
     </label>
     <input class="ontario-input" type="text">
 </div>
+</div>
+
+<div class="content">
 <div class="ontario-form-group">
-    <label class="ontario-label" for="text-input-example">
+    <label class="ontario-label">
         Date of Birth<span class="ontario-label__flag">(required)</span>
     </label>
-    <input class="ontario-input" type="date" id="text-input-example">
-</div>
+    <br />
+    <input class="ontario-input" type="date">
 </div>
 
 <div class="ontario-form-group">
     <label class="ontario-label">
-        Social Insurance Number<span class="ontario-label__flag">(required)</span>
+        Social Insurance Name<span class="ontario-label__flag">(required)</span>
     </label>
     once you add, this will no longer be visible
-    <input class="ontario-input ontario-input--20-char-width" type="text" inputmode="numeric" pattern="[0-9]" >
+    <input class="ontario-input" type="text">
 </div>
+</div>
+
 <a href="/app3" class="ontario-button ontario-button--primary">Add</a>
 
 </div><!-- close gray box -->
@@ -103,9 +151,38 @@ This information is used to verify your income with the Canada Revenue Agency.
 
 <div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">
 
-Total number of household members: 4
 
-( TODO -- LIST HERE)
+
+<div class="small-table">
+<table style="width: 98%;">
+<caption>Total number of household members: 4</caption>
+{% for t in table %}
+<tr><td>First Name</td><td>{{ t.fname }}</td></tr>
+<tr><td>Last Name</td><td>{{ t.lname }}</td></tr>
+<tr><td>Date of Birth</td><td>{{ t.date }}</td></tr>
+<tr><td>Social Insurance Number</td><td>{{ t.soc }}</td></tr>
+<tr><td>Account Holder</td><td>{{ t.account }}</td></tr>
+<tr><td colspan="2" style="border-bottom: 2px #000 solid;" class="ontario-table-highlight"><a href="#" class="ontario-button ontario-button--secondary">Edit</a></td></tr>
+{% endfor %}
+</table>
+</div>
+
+<div class="large-table ontario-table-div">
+<table>
+<caption>Total number of household members: 4</caption>
+<thead>
+<tr>
+    <th>First Name</th><th>Last Name</th><th>Date of Birth<th>Social Insurance Number</th><th>Account Holder</th><th></th>
+</tr>
+</thead>
+{% for t in table %}
+<tr>
+<td>{{t.fname}}</td><td>{{t.lname}}</td><td>{{t.date}}</td><td>{{t.soc}}</td><td>{{t.account}}</td><td><a href="#" class="ontario-button ontario-button--secondary">Edit</a></td>
+</tr>
+{% endfor %}
+</table>
+</div>
+
 </div><!-- close gray box -->
 
 <div style="padding: 30px; margin-top: 20px; " markdown="1">

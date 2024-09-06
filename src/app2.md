@@ -1,6 +1,8 @@
 ---
 layout: layouts/grid-container
 ---
+<div class="container">
+
 # 2 - Additional Information
 <div class="ontario-step-indicator">
     <div class="ontario-row">
@@ -14,6 +16,7 @@ layout: layouts/grid-container
             <hr />
         </div>
     </div>
+</div>
 </div>
 
 <div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">

@@ -7,10 +7,10 @@
   padding: 2rem;
   color: #000;
 }
-@media (max-width: 640px) {
+@media (max-width: 799px) {
   .message h1 {
     font-size: 27px;
-    max-width: 95%;
+    width: 95%;
   }
   .message p {
     font-size: 1.25rem;
@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 800px) {
   .message {max-width: 1120px; margin: auto;}
   .message h1 {
     font-size: 33px;

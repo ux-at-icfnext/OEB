@@ -4,11 +4,6 @@ layout: layouts/base
 <style>
 .ontario-dropdown{background-color:#fff;background-image:url("/assets/imgs/ontario-material-dropdown-arrow-48px.svg");background-position:right .5rem center;background-repeat:no-repeat;background-size:2rem;padding-right:2.25rem;cursor:pointer}.ontario-dropdown::-ms-expand{display:none}.ontario-dropdown option{font-weight:normal}
 
-.message {
-  
-  padding: 2rem;
-  color: #000;
-}
 @media (max-width: 640px) {
   .ontario-card__image-container { max-width: 20%;}
 }

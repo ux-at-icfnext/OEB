@@ -1,5 +1,7 @@
 ---
 layout: layouts/grid-container
+
+auth: true
 ---
 <div class="container">
 
@@ -18,8 +20,9 @@ layout: layouts/grid-container
     </div>
 </div>
 </div>
+{% include "partials/app-nav.md" %}
 
-<div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">
+<div style="padding: 30px; margin-top: 20px; " markdown="1">
 
 <div class="ontario-form-group">
     <fieldset class="ontario-fieldset">

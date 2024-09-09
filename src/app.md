@@ -1,6 +1,8 @@
 ---
 layout: layouts/grid-container
 
+auth: true
+
 select:
   label: Select or Type the Utility Provider
   required: required
@@ -14,6 +16,7 @@ img {
   cover-fit: contain;
   max-width: 90%;
 }
+
 .content {
   display: flex;
   gap: 30px;
@@ -74,8 +77,9 @@ For more information on the OESP security and privacy policies go to [Program Do
     </div>
 </div>
 
+{% include "partials/app-nav.md" %}
 </div>
-<div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">
+<div style="margin-top: 20px; padding: 30px;" markdown="1">
 
 ### Primary Utitlity Account Holder
 
@@ -94,7 +98,7 @@ For more information on the OESP security and privacy policies go to [Program Do
     <input class="ontario-input two-up" type="text">
 </div>
 </div>
-*NOTE: This information is used to verify your income with Canada Revenue Agency if you are a tax filer. Please ensure the name entered is spelled exactly as it appears on your most recent tax filling.
+<p>*NOTE: This information is used to verify your income with Canada Revenue Agency if you are a tax filer. Please ensure the name entered is spelled exactly as it appears on your most recent tax filling. </p>
 
 #### Utility Account Information
 

@@ -1,5 +1,7 @@
 ---
 layout: layouts/grid-container
+
+auth: true
 ---
 <style>
 img {
@@ -50,6 +52,7 @@ h4 {
         </div>
     </div>
 </div>
+{% include "partials/app-nav.md" %}
 
 <div class="ontario-callout">
     <h4 class="ontario-callout__title ontario-h5">No missing fields</h4>

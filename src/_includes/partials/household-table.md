@@ -74,10 +74,9 @@
 
 
 
-<div class="ontario-table-container table-small" >
-    <div class="ontario-table-div">
-        <table tabindex="0" style="width: 100%;">
-            <caption>Effective March 1, 2024<br>
+ <div class="ontario-table-div table-small">
+        <table style="width: 95%;">
+            <caption style="width: 95%;">Effective March 1, 2024<br>
             OESP Monthly Credit Amounts by Household Income Level</caption>
             <thead>
                 <tr>
@@ -200,7 +199,7 @@
             </tbody>
         </table>
     </div>
-</div>
+
 
                     
                     

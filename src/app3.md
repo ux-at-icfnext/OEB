@@ -1,6 +1,8 @@
 ---
 layout: layouts/grid-container
 
+auth: true
+
 table:
     - fname: Jane
       lname: Smith
@@ -93,7 +95,9 @@ h4 {
     </div>
 </div>
 </div>
-<div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">
+{% include "partials/app-nav.md" %}
+
+<div style="padding: 30px; margin-top: 20px; " markdown="1">
 
 ## Important
 Please add the name, date of birth and SIN for yourself and all household members 18 and older. The names should be entered exactly as they appear on their tax filings.
@@ -149,7 +153,7 @@ This information is used to verify your income with the Canada Revenue Agency.
 
 ---
 
-<div style="background-color: #F2F2F2; border-radius: 8px; padding: 30px; margin-top: 20px; " markdown="1">
+<div style=" padding: 30px; margin-top: 20px; " markdown="1">
 
 
 

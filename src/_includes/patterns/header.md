@@ -23,7 +23,7 @@
                 <div class='ontario-row'>
                     <div class='ontario-columns ontario-small-12 ontario-application-subheader__container'>
                         <p class='ontario-application-subheader__heading'>
-                            <a href='#'>New - Ontario Electricity Support Program</a>
+                            <a href='#'>Ontario Electricity Support Program</a>
                         </p>
                         <div class='ontario-application-subheader__menu-container'>
                             <ul class='ontario-application-subheader__menu ontario-show-for-large'>

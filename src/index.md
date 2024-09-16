@@ -12,7 +12,6 @@ This prototype uses the [Ontario Design System](https://designsystem.ontario.ca/
 _note most page links are functional so you can click through the prototype_
 [Home](/landing)
 [Home with alerts shown](/landing-alerts)
-[FAQ Page](/faqs-alt/) (not included with clicking through the prototype)
 [FAQ with in page navigation](/faqs/) 
 
 ### To show basic pages & forms

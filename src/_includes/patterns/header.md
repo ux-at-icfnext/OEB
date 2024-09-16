@@ -2,7 +2,6 @@
 .ontario-application-subheader, #ontario-header-menu-toggler  { background-color: #00682C; }
 .ontario-header-button:hover { background-color: #00682C; }
 </style>
-
 <div class='documentation-only--application'>
     <div class='ontario-header__container'>
         <header class='ontario-application-header ontario-header' id='ontario-header'>
@@ -24,16 +23,19 @@
                 <div class='ontario-row'>
                     <div class='ontario-columns ontario-small-12 ontario-application-subheader__container'>
                         <p class='ontario-application-subheader__heading'>
-                            <a href='/'>Ontario Electricity Support Program</a>
+                            <a href='#'>New - Ontario Electricity Support Program</a>
                         </p>
                         <div class='ontario-application-subheader__menu-container'>
-                        {% if auth %}
-                            <ul class='ontario-application-subheader__menu '>
+                            <ul class='ontario-application-subheader__menu ontario-show-for-large'>
+                                <li><a href='/landing'>Home</a></li>
+                                <li><a href='/faqs'>FAQs</a></li>
+                                <li><a href='/forms'>Program Documents</a></li>
+                                <li><a href='eligible'>Are you Eligible</a></li>
+                                {% if auth %}
                                 <li><a href='/account'>My Account</a></li>
-                                <li><a href='#'>Log Out</a></li>
+                                <li><a href='#'>Log Out</a></li>{% endif %}
                             </ul>
-                        {% endif %}
-                            <button class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline' id='ontario-header-menu-toggler' aria-controls='ontario-navigation' aria-label='Show navigation menu' type='button'>
+                            <button class='ontario-header__menu-toggler ontario-hide-for-large ontario-header-button ontario-header-button--with-outline' id='ontario-header-menu-toggler' aria-controls='ontario-navigation' aria-label='Show navigation menu' type='button'>
                                 <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'><use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use></svg>
                                 <span>Menu</span>
                             </button>
@@ -48,15 +50,14 @@
                 </button>
                 <div class="ontario-navigation__container">
                     <ul>
-                        <li class="ontario-show-for-small-only"><a href="/landing">Home</a></li>
-                        <li class="ontario-show-for-small-only"><a href="/faqs">FAQs</a></li>
-                          <li class="ontario-show-for-small-only"><a href="/forms">Program Documents</a></li>
-                          <li class="ontario-show-for-small-only"><a href="/eligible">Are you eligible?</a></li>
-                          <li><a href="/landing">Home</a></li>
-                          <li><a href="/faqs">FAQs</a></li>
-                          <li><a href="/forms">Program Documents</a></li>
-                          <li><a href="/eligible">Are you eligible?</a></li>
-                      </ul>
+                        <li><a href='/landing'>Home</a></li>
+                        <li><a href='/faqs'>FAQs</a></li>
+                        <li><a href='/forms'>Program Documents</a></li>
+                        <li><a href='eligible'>Are you Eligible</a></li>
+                        {% if auth %}
+                        <li><a href='/account'>My Account</a></li>
+                        <li><a href='#'>Log Out</a></li>{% endif %}
+                    </ul>
                 </div>
             </nav>
         </div>

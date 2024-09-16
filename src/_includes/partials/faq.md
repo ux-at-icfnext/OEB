@@ -26,7 +26,7 @@
 
 <main id="amounts"></main>
 
-### Amounts And Eligibility
+### Amounts and Eligibility
 {% assign accordion = amounts %}
 {% include "partials/amounts.md" %}
 

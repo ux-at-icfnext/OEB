@@ -5,7 +5,7 @@ auth: true
 ---
 <div class="container">
 
-# 2 - Additional Information
+# Additional Information
 <div class="ontario-step-indicator">
     <div class="ontario-row">
         <div class="ontario-columns ontario-small-12">

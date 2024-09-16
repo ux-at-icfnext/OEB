@@ -38,7 +38,7 @@ h4 {
 </style>
 <div class="container">
 
-# 4 - Review & Submit
+# Review & Submit
 <div class="ontario-step-indicator">
     <div class="ontario-row">
         <div class="ontario-columns ontario-small-12">

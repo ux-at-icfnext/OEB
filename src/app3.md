@@ -80,7 +80,7 @@ h4 {
 
 <div class="container">
 
-# 3 - People in Your House
+# People in Your House
 <div class="ontario-step-indicator">
     <div class="ontario-row">
         <div class="ontario-columns ontario-small-12">

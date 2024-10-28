@@ -1,3 +1,32 @@
+<style>
+.top button {
+    width: 50px;
+}
+.top {
+    text-align: right;
+    position: relative;
+    top: 80px;
+}
+@media (max-width: 640px) {
+    .top { max-width: 95%; margin: auto; }
+}
+@media (min-width: 641px) {
+    .top { max-width: 1120px; margin: auto; }
+}
+</style>
+<div class="top">
+<button onClick='scrollToTop()' id='actual-btt-button'>
+    <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"> <use href="#ontario-icon-arrow-up"></use></svg><br />
+    Top
+</button>
+<button onClick='scrollToTop()' id='actual-btt-button'>
+    <span class="material-symbols-outlined">
+chat_bubble
+</span><br />
+    Chat
+</button>
+</div>
+
 <!-- Default -->
 <footer class='ontario-footer ontario-footer--expanded'>
     <div class='ontario-footer__expanded-top-section'>

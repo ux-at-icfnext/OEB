@@ -1,6 +1,6 @@
 <style>
-.ontario-application-subheader, #ontario-header-menu-toggler  { background-color: #00682C; }
-.ontario-header-button:hover { background-color: #00682C; }
+.ontario-application-subheader, #ontario-header-menu-toggler  { background-color: #5F8129; }
+.ontario-header-button:hover { background-color: #5F8129; }
 </style>
 <div class='documentation-only--application'>
     <div class='ontario-header__container'>
@@ -23,20 +23,20 @@
                 <div class='ontario-row'>
                     <div class='ontario-columns ontario-small-12 ontario-application-subheader__container'>
                         <p class='ontario-application-subheader__heading'>
-                            <a href='#'>Ontario Electricity Support Program</a>
+                            <a href='/'>Ontario Electricity Support Program</a>
                         </p>
+
                         <div class='ontario-application-subheader__menu-container'>
-                            <ul class='ontario-application-subheader__menu ontario-show-for-large'>
-                                <li><a href='/landing'>Home</a></li>
-                                <li><a href='/faqs'>FAQs</a></li>
-                                <li><a href='/forms'>Program Documents</a></li>
-                                <li><a href='eligible'>Are you Eligible</a></li>
+                            <ul class='ontario-application-subheader__menu'>
                                 {% if auth %}
                                 <li><a href='/account'>My Account</a></li>
-                                <li><a href='#'>Log Out</a></li>{% endif %}
+                                <li><a href='#'>Log Out</a></li>
+                                {% else %}<li><a href='#'>Login</a></li>{% endif %}
                             </ul>
-                            <button class='ontario-header__menu-toggler ontario-hide-for-large ontario-header-button ontario-header-button--with-outline' id='ontario-header-menu-toggler' aria-controls='ontario-navigation' aria-label='Show navigation menu' type='button'>
-                                <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'><use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use></svg>
+                            <button class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline' id='ontario-header-menu-toggler' aria-controls='ontario-navigation' aria-label='Show navigation menu' type='button'>
+                                <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>
+                                    <use xlink:href='#ontario-icon-menu' id="ontario-header-menu-icon"></use>
+                                </svg>
                                 <span>Menu</span>
                             </button>
                         </div>
@@ -45,7 +45,9 @@
             </section>
             <nav class="ontario-navigation" id="ontario-navigation">
                 <button class="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline" id="ontario-header-nav-toggler" aria-controls="ontario-navigation" aria-label="Hide navigation menu">
-                    <svg class="ontario-icon" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><use xlink:href="#ontario-icon-close"></use></svg>
+                    <svg class="ontario-icon" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                        <use xlink:href="#ontario-icon-close"></use>
+                    </svg>
                     <span>Menu</span>
                 </button>
                 <div class="ontario-navigation__container">
@@ -53,7 +55,8 @@
                         <li><a href='/landing'>Home</a></li>
                         <li><a href='/faqs'>FAQs</a></li>
                         <li><a href='/forms'>Program Documents</a></li>
-                        <li><a href='eligible'>Are you Eligible</a></li>
+                        <li><a href='/eligible'>Are you Eligible</a></li>
+                        <li><a href='/contactus'>Contact Us</a></li>
                         {% if auth %}
                         <li><a href='/account'>My Account</a></li>
                         <li><a href='#'>Log Out</a></li>{% endif %}
@@ -64,3 +67,4 @@
     </div>
     <div class='ontario-overlay'></div>
 </div>
+

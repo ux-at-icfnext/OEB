@@ -1,4 +1,6 @@
 const yaml = require("js-yaml");
+const markdownIt = require("markdown-it");
+const markdownItRenderer = new markdownIt();
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets": "assets"});

@@ -3,9 +3,12 @@
     width: 50px;
 }
 .top {
-    text-align: right;
-    position: relative;
-    top: 80px;
+    position: sticky;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
 }
 @media (max-width: 640px) {
     .top { max-width: 95%; margin: auto; }

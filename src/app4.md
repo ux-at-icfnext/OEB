@@ -2,65 +2,31 @@
 layout: layouts/grid-container
 
 auth: true
+
+step:
+    number: 4
+    total: 4
+    link: app2
+    linkback: app3
+    button: Submit application
 ---
-<style>
-img {
-  cover-fit: contain;
-  max-width: 90%;
-}
-.content {
-  display: flex;
-  gap: 30px;
-}
-.two-thirds > div:first-child {
-  width: 66%;
 
-}
-.two-up.ontario-input {
-  margin: 0;
-}
-h3 {
-  margin-bottom: 1rem;
-}
-h4 {
-  margin-top: 1rem;
-}
+{% include "patterns/steps.md" %}
+# Review and Submit
 
-.save:after{
-   content: 'Save Draft';
-   display: block;
-}
-.save:focus:after,
-.save:active:after{
-   content: 'Draft Saved!';
-   display: block;
-}
-</style>
-<div class="container">
-
-# Review & Submit
-<div class="ontario-step-indicator">
-    <div class="ontario-row">
-        <div class="ontario-columns ontario-small-12">
-            <div class="ontario-step-indicator--with-back-button">
-                <button class="ontario-button ontario-button--tertiary">
-                    <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">  <use href="#ontario-icon-chevron-left"></use> </svg>Back
-                </button>
-                <span class="ontario-h4">Step&nbsp;4 of&nbsp;4</span>
-            </div>
-            <hr />
+<div class="ontario-alert ontario-alert--success">
+    <div class="ontario-alert__header">
+        <div class="ontario-alert__header-icon">
+            <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><use href="#ontario-icon-alert-success"></use></svg>
         </div>
+        <h2 class="ontario-alert__header-title ontario-h4">No missing fields</h2>
+    </div>
+    <div class="ontario-alert__body">
+        <p>You may continue to submit your application.</p>
     </div>
 </div>
-{% include "partials/app-nav.md" %}
 
-<div class="ontario-callout">
-    <h4 class="ontario-callout__title ontario-h5">No missing fields</h4>
-    <p>You may continue to submit your application.</p>
-
-</div>
-
-If you are having trouble completing your application, feel free to [email us](#).
+{% include "patterns/contact.md" %}
 
 <div class="ontario-form-group">
     <fieldset class="ontario-fieldset">
@@ -87,8 +53,6 @@ If you are having trouble completing your application, feel free to [email us](#
     </fieldset>
 </div>
 
-<div class="button-group">
-<a href="/app3" class="ontario-button ontario-button--secondary">Previous</a>
-<a href="" class="ontario-button ontario-button--primary">Submit Application</a>
-</div>
-</div>
+
+
+{% include "patterns/button-steps.md" %}

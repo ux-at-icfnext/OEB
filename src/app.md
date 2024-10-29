@@ -3,6 +3,14 @@ layout: layouts/grid-container
 
 auth: true
 
+step:
+    number: 1
+    total: 4
+    draft: true
+    link: app2
+    linkback: newapp/
+    button: Continue
+
 select:
   label: Select or Type the Utility Provider
   required: required
@@ -12,85 +20,29 @@ select:
     - Horizon Utilities Corporation - Alectra Utilities Corporation
 ---
 <style>
+.flex-columns { display: flex; gap: 30px;}
+.full > div { width: 100%; }
+.two-thirds > div:first-child {
+  width: 66%;
+}
 img {
   cover-fit: contain;
   max-width: 90%;
 }
-
-.content {
-  display: flex;
-  gap: 30px;
-}
-.two-thirds > div:first-child {
-  width: 66%;
-
-}
-.two-up.ontario-input {
-  margin: 0;
-}
-h3 {
-  margin-bottom: 1rem;
-}
-h4 {
-  margin-top: 1rem;
-}
-
-.save:after{
-   content: 'Save Draft';
-   display: block;
-}
-.save:focus:after,
-.save:active:after{
-   content: 'Draft Saved!';
-   display: block;
-}
 </style>
-<div class="container">
 
-# Do you have your electricity bill with you?
+{% include "patterns/steps.md" %}
+# Utility Account Information
 
-You’ll need it for the section below. Overall, it should take you less than 20 minutes to complete your application.
+### Primary Utility Account Holder
 
-Also, please keep in mind that you will have to print out your consent form or sign electronically once the application is submitted.
-
-## Privacy Note
-Your application contains sensitive personal information. Please make sure you use the "Log Off" button found on the top right of the website when you are done.
-
-If you are using a public computer, in addition to logging off, be sure to close your browser to help protect your personal information:
-
-1. For Windows users, please close using the “X” button on the top right of the browser and make sure all tabs are closed.
-
-2. For Mac users, please ensure the browser is closed by selecting the browser menu (Safari, Chrome, Firefox, etc.) from the top left of your screen and selecting Quit.
-
-For more information on the OESP security and privacy policies go to [Program Documents](#).
-
-## Utility Account Information
-
-<div class="ontario-step-indicator">
-    <div class="ontario-row">
-        <div class="ontario-columns ontario-small-12">
-            <div class="ontario-step-indicator--without-back-button">
-                <span class="ontario-h4">Step&nbsp;1 of&nbsp;4</span>
-            </div>
-            <hr />
-        </div>
-    </div>
-</div>
-
-{% include "partials/app-nav.md" %}
-</div>
-<div style="margin-top: 20px; padding: 30px;" markdown="1">
-
-### Primary Utitlity Account Holder
-
-<div class="content">
+<div class="flex-columns full">
 <div class="ontario-form-group">
     <label class="ontario-label">
         First Name<span class="ontario-label__flag">(required)</span>
     </label>
     <input class="ontario-input two-up" type="text">
 </div>
-
 <div class="ontario-form-group">
     <label class="ontario-label">
         Last Name<span class="ontario-label__flag">(required)</span>
@@ -98,21 +50,24 @@ For more information on the OESP security and privacy policies go to [Program Do
     <input class="ontario-input two-up" type="text">
 </div>
 </div>
-<p>*NOTE: This information is used to verify your income with Canada Revenue Agency if you are a tax filer. Please ensure the name entered is spelled exactly as it appears on your most recent tax filling. </p>
 
-#### Utility Account Information
+Note: This information is used to verify your income with Canada Revenue Agency if you are a tax filer. Please ensure the name entered is spelled exactly as it appears on your most recent tax filling. 
+
+### Utility Account Information
 
 Please enter your information exactly as it appears highlighted on the sample bill below. If your information is not entered as it appears as highlighted on the sample bill, your application may be returned to you for correction.
 
 {% include "patterns/dropdown.md" %}
 
 ![alectra](/assets/imgs/alectra.jpeg)
-*Use the image above to locate your account information*
+
+
 
 <div class="ontario-form-group">
     <label class="ontario-label">
         Utility Account Number<span class="ontario-label__flag">(required)</span>
     </label>
+    <p class="ontario-hint" id="hint-text-example-hint">Enter the information from your bill as per the highlighted instructions in the sample above </p>
     <input class="ontario-input" type="text">
 </div>
 <div class="ontario-form-group">
@@ -128,13 +83,13 @@ Please enter your information exactly as it appears highlighted on the sample bi
     </label>
     <input class="ontario-input" type="text">
 </div>
-*Please note: The Service Address may be different from the Mailing Address
+Note: The Service Address may be different from the Mailing Address
 
-If you need assistance finding information on your utility bill, please contact the OESP Contact Centre at [1-855-831-8151](/)
+{% include "patterns/contact.md" %}
 
+### Mailing Address
+Please enter your current address and valid postal code. Note that mailing addresses must be in Ontario.
 
-#### Mailing Address
-_Please enter your current address and valid postal code. Note that mailing addresses must be in Ontario._
 
 <div class="ontario-form-group">
     <label class="ontario-label">
@@ -143,7 +98,7 @@ _Please enter your current address and valid postal code. Note that mailing addr
     <input class="ontario-input" type="text">
 </div>
 
-<div class="content two-thirds">
+<div class="flex-columns two-thirds">
 <div class="ontario-form-group">
     <label class="ontario-label">
         Address 2 - Apartment, Suite or Unit Designation and Number<span class="ontario-label__flag">(required)</span>
@@ -155,11 +110,11 @@ _Please enter your current address and valid postal code. Note that mailing addr
     <label class="ontario-label" for="text-input-example-width-20">
         Province<span class="ontario-label__flag">(required)</span>
     </label>
-    <input class="ontario-input ontario-input--20-char-width" type="text" id="text-input-example-width-20">
+    <input class="ontario-input ontario-input--2-char-width" type="text" id="text-input-example-width-20">
 </div>
 </div>
 
-<div class="content two-thirds">
+<div class="flex-columns two-thirds">
 <div class="ontario-form-group">
     <label class="ontario-label">
         City/Town<span class="ontario-label__flag">(required)</span>
@@ -168,10 +123,10 @@ _Please enter your current address and valid postal code. Note that mailing addr
 </div>
 
 <div class="ontario-form-group">
-    <label class="ontario-label" for="text-input-example-width-20">
+    <label class="ontario-label" for="text-input-example-width-7">
         Postal Code<span class="ontario-label__flag">(required)</span>
     </label>
-    <input class="ontario-input ontario-input--20-char-width" type="text" id="text-input-example-width-20">
+    <input class="ontario-input ontario-input--7-char-width" type="text" id="text-input-example-width-20">
 </div>
 </div>
 
@@ -200,7 +155,7 @@ _Please enter your current address and valid postal code. Note that mailing addr
 <div class="ontario-form-group" >
     <fieldset class="ontario-fieldset">
         <legend class="ontario-fieldset__legend">
-            How would you like us to reach you?
+            How would you like us to reach you? (required)
         </legend>
         <div class="ontario-radios">
             <div class="ontario-radios__item">
@@ -219,7 +174,6 @@ _Please enter your current address and valid postal code. Note that mailing addr
      </fieldset>
 </div>
 
-
 <div class="ontario-form-group">
     <fieldset class="ontario-fieldset">
         <div class="ontario-checkboxes">
@@ -232,15 +186,6 @@ _Please enter your current address and valid postal code. Note that mailing addr
         </div>
     </fieldset>
 </div>
-</div><!-- close gray box -->
-
-<div style="padding: 30px; margin-top: 20px; " markdown="1">
-<div class="button-group">
-<a href="/newapp" class="ontario-button ontario-button--secondary">Previous</a>
-<a href="/app2" class="ontario-button ontario-button--primary">Next</a>
-<a href="" class="ontario-button ontario-button--tertiary">Save Draft</a>
-</div>
-
-</div> <!-- closes form field -->
 
 
+{% include "patterns/button-steps.md" %}

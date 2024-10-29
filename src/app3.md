@@ -3,117 +3,51 @@ layout: layouts/grid-container
 
 auth: true
 
-table:
-    - fname: Jane
-      lname: Smith
-      date: 01/01/1981
-      soc: "***-***-258"
-      account: Yes
-    - fname: John
-      lname: Smith
-      date: 01/01/1980
-      soc: "***-***-123"
-      account: Yes
-    - fname: Jack
-      lname: Smith
-      date: 01/01/2008
-      soc: "***-***-987"
-      account: No
-    - fname: Janey
-      lname: Smith
-      date: 01/01/2010
-      soc: "***-***-758"
-      account: No
+step:
+    number: 3
+    total: 4
+    draft: true
+    link: app4
+    linkback: app2
+    button: Continue
 ---
 <style>
+.flex-columns { display: flex; gap: 30px;}
+.full > div { width: 100%; }
+.two-thirds > div:first-child {
+  width: 66%;
+}
 img {
   cover-fit: contain;
   max-width: 90%;
 }
-@media (max-width: 799px) {
-    .small-table {
-        display: block;
-    }
-    .large-table {
-        display: none;
-    }
-}
-@media (min-width: 800px) {
-    .content {
-        display: flex;
-        gap: 30px;
-    }
-    .content .ontario-form-group {
-        width: 45%;
-    }
-    .small-table {
-        display: none;
-    }
-    .large-table {
-        display: block;
-    }
-}
-.two-thirds > div:first-child {
-  width: 66%;
-
-}
-.two-up.ontario-input {
-  margin: 0;
-}
-h3 {
-  margin-bottom: 1rem;
-}
-h4 {
-  margin-top: 1rem;
-}
-
-.save:after{
-   content: 'Save Draft';
-   display: block;
-}
-.save:focus:after,
-.save:active:after{
-   content: 'Draft Saved!';
-   display: block;
+li {
+    max-width: 80ex;
 }
 </style>
 
-<div class="container">
-
+{% include "patterns/steps.md" %}
 # People in Your House
-<div class="ontario-step-indicator">
-    <div class="ontario-row">
-        <div class="ontario-columns ontario-small-12">
-            <div class="ontario-step-indicator--with-back-button">
-                <button class="ontario-button ontario-button--tertiary">
-                    <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">  <use href="#ontario-icon-chevron-left"></use> </svg>Back
-                </button>
-                <span class="ontario-h4">Step&nbsp;3 of&nbsp;4</span>
-            </div>
-            <hr />
-        </div>
-    </div>
-</div>
-</div>
-{% include "partials/app-nav.md" %}
 
-<div style="padding: 30px; margin-top: 20px; " markdown="1">
+Please add the names and birth dates of all members living in the home for six or more months of the year, including yourself. Include the Social Insurance Number (SIN) for all household members 18 and older. 
 
-## Important
-Please add the name, date of birth and SIN for yourself and all household members 18 and older. The names should be entered exactly as they appear on their tax filings.
+This information is used to verify income with the Canada Revenue Agency.  Please ensure each name is spelled exactly as it appears on the most recent tax return.
+
+Note, for privacy reasons:
+1. Only the last three digits of a SIN will display once you click "Add".
+2. All information for household members under 18 years of age will be deleted from the application after the eligibility decision is made.
+
+<aside class="ontario-aside">
 
 Only information about the applicant’s electricity account, and the amount of OESP for which the applicant’s household may be eligible, will be disclosed to the utility provider. The utility provider will not be provided with other personal information about the applicant and members of the applicant’s household, such as their SIN, income or dates of birth.
+</aside>
 
 ## Household Member
-This information is used to verify your income with the Canada Revenue Agency.
-1. INCLUDE ALL PEOPLE LIVING AT THE HOUSE FOR 6 OR MORE MONTHS OF THE YEAR.
-2. INCLUDE NAMES AND INFORMATION OF ALL HOUSEHOLD MEMBERS THAT HAVE BEEN ADDED.
-3. IF A HOUSEHOLD MEMBER IS YOUNGER THAN 18, WE DO NOT NEED A SIN.
-4. FOR PRIVACY REASONS, ALL INFORMATION FOR HOUSEHOLD MEMBERS UNDER 18 WILL BE DELETED FROM THE APPLICATION AFTER THE ELIGIBILITY DECISION IS MADE.
+Household Member heading, include only the following copy (the instructions listed here have been condensed and rewritten into the copy for the section above Household Member):
 
- Please ensure the spelling is exactly as it appears in your most recent tax return.
+Enter a household member's information and click "Add". Then, their information will appear in the table below.
 
-<div class="content">
+<div class="flex-columns full">
 <div class="ontario-form-group">
     <label class="ontario-label">
         First Name<span class="ontario-label__flag">(required)</span>
@@ -129,7 +63,8 @@ This information is used to verify your income with the Canada Revenue Agency.
 </div>
 </div>
 
-<div class="content">
+
+<div class="flex-columns full">
 <div class="ontario-form-group">
     <label class="ontario-label">
         Date of Birth<span class="ontario-label__flag">(required)</span>
@@ -149,47 +84,8 @@ This information is used to verify your income with the Canada Revenue Agency.
 
 <a href="/app3" class="ontario-button ontario-button--primary">Add</a>
 
-</div><!-- close gray box -->
+{% include "partials/houselist.md" %}
 
----
-
-<div style=" padding: 30px; margin-top: 20px; " markdown="1">
-
-
-
-<div class="small-table">
-<table style="width: 98%;">
-<caption>Total number of household members: 4</caption>
-{% for t in table %}
-<tr><td>First Name</td><td>{{ t.fname }}</td></tr>
-<tr><td>Last Name</td><td>{{ t.lname }}</td></tr>
-<tr><td>Date of Birth</td><td>{{ t.date }}</td></tr>
-<tr><td>Social Insurance Number</td><td>{{ t.soc }}</td></tr>
-<tr><td>Account Holder</td><td>{{ t.account }}</td></tr>
-<tr><td colspan="2" style="border-bottom: 2px #000 solid;" class="ontario-table-highlight"><a href="#" class="ontario-button ontario-button--secondary">Edit</a></td></tr>
-{% endfor %}
-</table>
-</div>
-
-<div class="large-table ontario-table-div">
-<table>
-<caption>Total number of household members: 4</caption>
-<thead>
-<tr>
-    <th>First Name</th><th>Last Name</th><th>Date of Birth<th>Social Insurance Number</th><th>Account Holder</th><th></th>
-</tr>
-</thead>
-{% for t in table %}
-<tr>
-<td>{{t.fname}}</td><td>{{t.lname}}</td><td>{{t.date}}</td><td>{{t.soc}}</td><td>{{t.account}}</td><td><a href="#" class="ontario-button ontario-button--secondary">Edit</a></td>
-</tr>
-{% endfor %}
-</table>
-</div>
-
-</div><!-- close gray box -->
-
-<div style="padding: 30px; margin-top: 20px; " markdown="1">
 <div class="ontario-form-group">
     <fieldset class="ontario-fieldset">
         <div class="ontario-checkboxes">
@@ -202,12 +98,4 @@ This information is used to verify your income with the Canada Revenue Agency.
         </div>
     </fieldset>
 </div>
-
-<div class="button-group">
-<a href="/app2" class="ontario-button ontario-button--secondary">Previous</a>
-<a href="/app4" class="ontario-button ontario-button--primary">Next</a>
-<a href="" class="ontario-button ontario-button--tertiary">Save Draft</a>
-</div>
-
-</div>
-
+{% include "patterns/button-steps.md" %}

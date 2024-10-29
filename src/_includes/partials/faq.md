@@ -9,9 +9,7 @@
    }
 </style>
 
-# Ontario Electricity Support Program
-
-## Questions and Answers
+# Frequently Asked Questions
 <main id="about"></main>
 
 ### About the Program

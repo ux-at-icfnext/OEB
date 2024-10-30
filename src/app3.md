@@ -10,6 +10,39 @@ step:
     link: app4
     linkback: app2
     button: Continue
+
+table:
+    - fname: Jane
+      lname: Smith
+      date: 01/01/1981
+      soc: "***-***-258"
+      account: Yes
+      btn:
+        - label: Change
+    - fname: John
+      lname: Smith
+      date: 01/01/1980
+      soc: "***-***-123"
+      account: No
+      btn:
+        - label: Change
+        - label: Remove
+    - fname: Jack
+      lname: Smith
+      date: 01/01/2008
+      soc: "***-***-987"
+      account: No
+      btn:
+        - label: Change
+        - label: Remove
+    - fname: Janey
+      lname: Smith
+      date: 01/01/2010
+      soc: "***-***-758"
+      account: No
+      btn:
+        - label: Change
+        - label: Remove
 ---
 <style>
 .flex-columns { display: flex; gap: 30px;}
@@ -23,6 +56,24 @@ img {
 }
 li {
     max-width: 80ex;
+}
+.large-table {
+        display: none;
+}
+@media (min-width: 800px) {
+    .content {
+        display: flex;
+        gap: 30px;
+    }
+    .content .ontario-form-group {
+        width: 45%;
+    }
+    .small-table {
+        display: none;
+    }
+    .large-table {
+        display: block;
+    }
 }
 </style>
 
@@ -84,9 +135,9 @@ Enter a household member's information and click "Add". Then, their information 
 
 <a href="/app3" class="ontario-button ontario-button--primary">Add</a>
 
-{% include "partials/houselist.md" %}
+{% include "partials/housetable.md" %}
 
-<div class="ontario-form-group">
+<div class="ontario-form-group" style="margin-top: 20px;">
     <fieldset class="ontario-fieldset">
         <div class="ontario-checkboxes">
             <div class="ontario-checkboxes__item">

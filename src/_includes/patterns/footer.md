@@ -22,12 +22,6 @@
     <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"> <use href="#ontario-icon-arrow-up"></use></svg><br />
     Top
 </button>
-<button onClick='scrollToTop()' id='actual-btt-button'>
-    <span class="material-symbols-outlined">
-chat_bubble
-</span><br />
-    Chat
-</button>
 </div>
 
 <!-- Default -->

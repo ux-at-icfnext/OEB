@@ -18,7 +18,7 @@
 </h2>
 {% if c.content %}
 <div class="ontario-card__description">
-{{ c.content }}
+{{ c.content | markdownify }}
 </div>
 {% endif %}
 </div>

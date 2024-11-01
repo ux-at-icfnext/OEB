@@ -22,12 +22,18 @@ checkbox:
 
 
 # Renew Application
-_*All fields are mandatory._
+
+Renew your application if you have ever applied for OESP or are currently receiving OESP credits. If you have not applied before, please return to the home page and select “New application”.
+
+<div class="ontario-callout ontario-border-highlight--lime">
+
+Note: Please note that if you currently receive an OESP credit, your circumstances have changed, and your application is denied, your OESP credits will stop.
+</div>
 
 <div class="ontario-form-group">
     <fieldset class="ontario-fieldset">
         <legend class="ontario-fieldset__legend">
-            Have you ever submitted an application for OESP before? If you have not applied before, please return to the Home page and select New Application.<span class="ontario-label__flag">(required)</span>
+            Have you ever submitted an application for OESP before?<span class="ontario-label__flag">(required)</span>
         </legend>
         <div class="ontario-radios">
             <div class="ontario-radios__item">

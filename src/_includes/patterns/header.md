@@ -30,8 +30,8 @@
                             <ul class='ontario-application-subheader__menu'>
                                 {% if auth %}
                                 <li><a href='/account'>My Account</a></li>
-                                <li><a href='#'>Log Out</a></li>
-                                {% else %}<li><a href='#'>Login</a></li>{% endif %}
+                                <li><a href='/'>Log Out</a></li>
+                                {% else %}<li><a href='/login'>Login</a></li>{% endif %}
                             </ul>
                             <button class='ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline' id='ontario-header-menu-toggler' aria-controls='ontario-navigation' aria-label='Show navigation menu' type='button'>
                                 <svg class='ontario-icon' focusable='false' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'>

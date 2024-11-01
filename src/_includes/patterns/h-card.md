@@ -1,8 +1,14 @@
-<ul class="ontario-card__container ontario-card--cards-per-row-2">
+<style>
+.ontario-card__image-container, .ontario-card__heading {text-align: center;}
+.ontario-card__image-container {background-color: #5F8129;}
+.ontario-card__image{ max-width: 40px; height: auto; padding: 20px;}
+</style>
+<!-- Title card (default header with 4:3 aspect ratio) -->
+<ul class="ontario-card__container ontario-card--cards-per-row-3">
 {% for c in card %}
-<li class="ontario-card ontario-card--image--one-third   ontario-card--position-horizontal ontario-card--position-horizontal__image-left">
+<li class="ontario-card ontario-card--default ontario-card--no-description ontario-card--position-vertical  ">
 <div class="ontario-card__image-container">
-<img class="" src="/assets/imgs/{{ c.image }}" alt="card component image">
+<img class="ontario-card__image" src="/assets/imgs/{{ c.image }}" alt="">
 </div>
 <div class="ontario-card__text-container ontario-card--image-true">
 <h2 class="ontario-card__heading">

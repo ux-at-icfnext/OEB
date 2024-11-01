@@ -5,15 +5,18 @@ auth: true
 
 card:
   - title: Application
-    image: description.png
+    image: description-white.svg
+    link: /app
   - title: Electronic Consent Form
-    image: list_alt.png
+    image: list_alt-white.svg
   - title: Change Password
-    image: edit_document.png
+    image: edit_document-white.svg
   - title: Program Documents
-    image: file_copy.png
-  - title: FAQs
-    image: ontario-icon-help.png
+    image: file_copy-white.svg
+  - title: Frequently Asked Questions
+    image: help-white.svg
+  - title: Contact Us
+    image: tty-white.svg
 ---
 <style>
   img {
@@ -40,9 +43,16 @@ card:
 
 This dashboard has everything you need for the Ontario Electricity Support Program (OESP). Get answers to frequently asked questions, check your application status, and monitor your account right here.
 
-<div class="ontario-callout ontario-border-highlight--sky">
-    <h2 class="ontario-callout__title ontario-h5">Application Status: Pending</h2>
-    <p>Your application has been submitted and is currently being processed. If you have not already done so, please complete the <a href="#">electronic consent form</a> or sign and mail a paper consent form.</p>
+<div class="ontario-alert ontario-alert--informational">
+    <div class="ontario-alert__header">
+        <div class="ontario-alert__header-icon">
+            <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><use href="#ontario-icon-alert-information"></use></svg>
+        </div>
+        <h2 class="ontario-alert__header-title ontario-h4">Application Status: Pending</h2>
+    </div>
+    <div class="ontario-alert__body">
+        <p>Your application has been submitted and is currently being processed. If you have not already done so, please complete the <a href="#">electronic consent form</a> or sign and mail a paper consent form.</p>
+    </div>
 </div>
 
 <div class="content">
@@ -58,5 +68,10 @@ This dashboard has everything you need for the Ontario Electricity Support Progr
 
 <div class="content-right" markdown="1">
 
-{% include "patterns/h-card.md" %}
+## Privacy Note 
+Your application contains personal information. Please use the “Log Off” button found at the top right of the page when you are done. If you are using a public computer, in addition to logging off, be sure to close your browser (including all tabs) to help protect your personal information.
+
 </div>
+</div>
+
+{% include "patterns/h-card.md" %}

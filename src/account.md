@@ -8,7 +8,7 @@ card:
     image: description-white.svg
     link: /app
   - title: Change Password
-    image: edit_document-white.svg
+    image: manage_accounts-white.svg
   - title: Program Documents
     image: file_copy-white.svg
   - title: Frequently Asked Questions

@@ -5,7 +5,7 @@ alert: true
 
 card:
   - title: Are You Eligibile
-    image: how_to_reg.png
+    image: how_to_reg-white.svg
     content: Use our tool to find out
   - title: Frequently Asked Questions
     image: help-white.svg

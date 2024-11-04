@@ -8,9 +8,9 @@ card:
     image: description-white.svg
     link: /app
   - title: Electronic Consent Form
-    image: list_alt-white.svg
-  - title: Change Password
     image: edit_document-white.svg
+  - title: Change Password
+    image: manage_accounts-white.svg
   - title: Program Documents
     image: file_copy-white.svg
   - title: Frequently Asked Questions

@@ -1,5 +1,5 @@
 <style>
-.ontario-card__image-container, .ontario-card__heading {text-align: center;}
+.ontario-card__image-container, .ontario-card__heading, .ontario-card__description {text-align: center;}
 .ontario-card__image-container {background-color: #5F8129;}
 .ontario-card__image{ max-width: 40px; height: auto; padding: 20px;}
 </style>

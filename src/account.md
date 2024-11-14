@@ -35,6 +35,9 @@ card:
   .content-right {
     width: 100%
   }
+  .ontario-card__text-container {
+    min-height: 100px;
+  }
   }
 </style>
 

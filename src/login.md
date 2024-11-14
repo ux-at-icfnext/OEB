@@ -18,6 +18,6 @@ Your User ID and a temporary password were sent to you when you saved or submitt
     </label>
     <input class="ontario-input" type="text" id="text-input-example">
 </div>
-<button class="ontario-button ontario-button--primary">Login</button>
+<button class="ontario-button ontario-button--primary">Log in</button>
 
 Can’t find your User ID or Password? Please [contact us](/contactus).

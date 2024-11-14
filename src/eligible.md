@@ -12,14 +12,14 @@ In order to apply you must be the account holder for the electricity bill AND li
 
 <div class="ontario-form-group">
     <label class="ontario-label" for="text-input-example">
-        1. How many people currently live in your house?<span class="ontario-label__flag">(required)</span>
+        How many people currently live in your house?<span class="ontario-label__flag">(required)</span>
     </label>
     <input class="ontario-input ontario-input--2-char-width" type="text" id="text-input-example" value="4">
 </div>
 
 <div class="ontario-form-group">
     <label class="ontario-label" for="text-input-example">
-        2. What is your total annual household income after taxes? (Please do not include commas in your response)?<span class="ontario-label__flag">(required)</span>
+        What is your total annual household income after taxes?<span class="ontario-label__flag">(required)</span>
     </label>
     <input class="ontario-input ontario-input--10-char-width" type="number" id="text-input-example" value="5500">
 </div>
@@ -36,7 +36,7 @@ In order to apply you must be the account holder for the electricity bill AND li
 
         Once your application is approved, you will be able to find out the exact amount you are eligible for.
 
-        <a href="/app" class="ontario-button ontario-button--primary">Fill out your application</a>
+        <a href="/app" class="ontario-button ontario-button--primary">New application</a> <a href="/app" class="ontario-button ontario-button--secondary">Renew application</a>
 </div>
 
 

@@ -45,11 +45,12 @@ table:
         - label: Remove
 ---
 <style>
-.flex-columns { display: flex; gap: 30px;}
-.full > div { width: 100%; }
+.flex-columns { display: flex; gap: 30px; margin: 0; padding: 0;}
+.full > div { width: 100%;}
 .two-thirds > div:first-child {
   width: 66%;
 }
+
 img {
   cover-fit: contain;
   max-width: 90%;

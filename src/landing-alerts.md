@@ -23,6 +23,7 @@ card:
   }
   @media (min-width: 641px) {
       .contain { max-width: 1120px; margin: auto; }
+      .contain-tight { max-width: 80ex; margin: auto; }
       .cols { display: flex; gap: 20px;}
   }
   .need-help { width: 100%; background-color: #F2F2F2; padding: 20px; }
@@ -32,7 +33,7 @@ card:
 .ontario-alert { margin-bottom: 20px; }
 </style>
 
-{% include "patterns/hero.md" %}
+
 
 <div class="ontario-alert ontario-alert--informational container">
     <div class="ontario-alert__header">
@@ -48,7 +49,12 @@ card:
 </div>
 
 <div class="contain">
+{% include "patterns/hero.md" %}
+
 {% include "patterns/h-card.md" %}
+
+</div>
+<div class="contain-tight">
 
 ## More help for more Ontarians
 Effective March 1, 2024, the Ontario government has changed the household income amounts needed to qualify for OESP. This change makes more households eligible for electricity bill relief. 

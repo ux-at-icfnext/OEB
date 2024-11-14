@@ -59,6 +59,12 @@ img {
         <legend class="ontario-fieldset__legend">
             Do you, or does anyone in your house, use one of the following pieces of medical equipment at home? (optional)
         </legend>
+        <div class="ontario-checkboxes__item">
+                <input class="ontario-checkboxes__input" id="checkbox-option-3" name="options" type="checkbox" value="option-3">
+                <label class="ontario-checkboxes__label" for="checkbox-option-3">
+                    Kidney Dialysis Machine <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><use href="#ontario-icon-help"></use></svg>
+                </label>
+            </div>
         <div class="ontario-checkboxes">
             <div class="ontario-checkboxes__item">
                 <input class="ontario-checkboxes__input" id="checkbox-option-1" name="options" type="checkbox" value="option-1">
@@ -70,12 +76,6 @@ img {
                 <input class="ontario-checkboxes__input" id="checkbox-option-2" name="options" type="checkbox" value="option-2">
                 <label class="ontario-checkboxes__label" for="checkbox-option-2">
                     Oxygen Concentrator <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><use href="#ontario-icon-help"></use></svg>
-                </label>
-            </div>
-            <div class="ontario-checkboxes__item">
-                <input class="ontario-checkboxes__input" id="checkbox-option-3" name="options" type="checkbox" value="option-3">
-                <label class="ontario-checkboxes__label" for="checkbox-option-3">
-                    Kidney Dialysis Machine <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"><use href="#ontario-icon-help"></use></svg>
                 </label>
             </div>
         </div>

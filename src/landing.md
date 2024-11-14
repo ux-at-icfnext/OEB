@@ -28,9 +28,10 @@ card:
 .ontario-footer { margin: 0; }
 .top {display: none;}
 </style>
+<div class="contain">
 
 {% include "patterns/hero.md" %}
-
+</div>
 
 <div class="contain">
 {% include "patterns/h-card.md" %}

@@ -17,12 +17,14 @@
     .top { max-width: 1120px; margin: auto; }
 }
 </style>
-<div class="top">
-<button onClick='scrollToTop()' id='actual-btt-button'>
-    <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"> <use href="#ontario-icon-arrow-up"></use></svg><br />
+
+<button onClick='scrollToTop()' id='actual-btt-button' class='ontario-back-to-top--default'>
+    <svg class="ontario-icon" alt="" aria-hidden="true" focusable="false" sol:category="primary" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+        <use href="#ontario-icon-arrow-up"></use>
+    </svg>
     Top
 </button>
-</div>
+
 
 <footer class='ontario-footer ontario-footer--default'>
     <div class='ontario-row'>

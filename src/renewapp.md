@@ -27,7 +27,7 @@ Renew your application if you have ever applied for OESP or are currently receiv
 
 <div class="ontario-callout ontario-border-highlight--lime">
 
-Note: Please note that if you currently receive an OESP credit, your circumstances have changed, and your application is denied, your OESP credits will stop.
+Note: If you currently receive an OESP credit, your circumstances have changed, and your application is denied, your OESP credits will stop.
 </div>
 
 <div class="ontario-form-group">

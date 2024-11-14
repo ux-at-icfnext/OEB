@@ -131,7 +131,7 @@ Please enter your current address and valid postal code. Note that mailing addre
 </div>
 
 
-#### Contact Information
+### Contact Information
 <div class="ontario-form-group">
     <label class="ontario-label">
         Phone Number<span class="ontario-label__flag">(required)</span>

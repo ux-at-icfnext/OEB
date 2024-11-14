@@ -5,12 +5,12 @@ layout: layouts/grid-container
 # Online Application 
 
 <aside class="ontario-aside">
- <img src="/assets/imgs/ontario-icon-clock.svg" style="vertical-align:middle" > Estimated time to completion 15 - 20 minutes
+ <img src="/assets/imgs/ontario-icon-clock.svg" style="vertical-align:middle" > Estimated time to complete 15 - 20 minutes
 </aside>
 
 Note: You will need to print out your consent form or sign electronically once the application is submitted. 
 
-Before you get started, gather the following: 
+## Before you get started, gather the following: 
 - Your electricity bill 
 - Names and birth dates of all residents in the home as registered with the Canada Revenue Agency 
 - Social Insurance Numbers or Temporary Tax Numbers for all household members 18 and older 
@@ -25,7 +25,7 @@ For more information about the collection, use and disclosure of personal inform
 
 ## Privacy Note 
 
-our application contains personal information. Please make sure you use the "Log Off" button found on the top right of the website when you are done. 
+Your application contains personal information. Please make sure you use the "Log Off" button found on the top right of the website when you are done. 
 
 If you are using a public computer, in addition to logging off, be sure to close your browser to help protect your personal information: 
 

@@ -4,10 +4,12 @@ layout: layouts/grid-container
 
 # Are you eligible for this program?
 
-In order to apply you must be the account holder for the electricity bill AND live at the service address for the account.
-- All household members who live at the service address six months or more of the year must be listed on the application.
-- Eligibility for the OESP credit will depend on how many people live in the house and the total household income after tax.
-- Save time and find out before you fill out your application. All you need to do is answer these questions:
+In order to apply, you must:
+- Be the account holder for the electricity bill
+- Live at the service address for the account
+- Include all household members who live at the service address six or more months of the year
+
+Save time and find out before you fill out your application. All you need to do is answer these questions:
 
 
 <div class="ontario-form-group">
